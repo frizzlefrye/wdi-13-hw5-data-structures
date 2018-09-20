@@ -48,87 +48,85 @@
 // Write code that will access your hobby from the object that you just created.
 
 
+const rainbow = ['yellow', 'green', 'blue', 'red', 'orange', 'indigo', 'Violet'];
+console.log(rainbow[2]);
 
+const pickle = [
 
-// const rainbow = ['yellow', 'green', 'blue', 'red', 'orange', 'indigo', 'Violet'];
-// console.log(rainbow[2]);
-
-// const pickle = [
-
-// 	{name: 'Greg', hobby: ['Cold HotDog'], City: 'Chicago', datatype:'array'}
-// ];
-// console.log(pickle[0].hobby[0]);
+	{name: 'Greg', hobby: ['Cold HotDog'], City: 'Chicago', datatype:'array'}
+];
+console.log(pickle[0].hobby[0]);
 
 // Crazy Object
 
-// const crazyObject = {
-//   taco: [
-//     {
-//       meat: 'steak',
-//       cheese: ['panela', 'queso', 'chihuahua']
-//     },
-//     {
-//       meat: 'chicken',
-//       salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]
-//     },
-//   ],
-//   larry: {
-//     nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
-//     quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
-//     characters: [
-//       {
-//         name: "Jeff",
-//         occupation: "manager"
-//       },
-//       {
-//         name: "funkhauser",
-//         occupation: "tv dude"
-//       },
-//       {
-//         name: "susie",
-//         occupation: "jeffs wife",
-//         favourtieHobby: "Swearing at Larry and Jeff"
-//       },
-//     ]
-//   }
-// }
+const crazyObject = {
+  taco: [
+    {
+      meat: 'steak',
+      cheese: ['panela', 'queso', 'chihuahua']
+    },
+    {
+      meat: 'chicken',
+      salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]
+    },
+  ],
+  larry: {
+    nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
+    quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
+    characters: [
+      {
+        name: "Jeff",
+        occupation: "manager"
+      },
+      {
+        name: "funkhauser",
+        occupation: "tv dude"
+      },
+      {
+        name: "susie",
+        occupation: "jeffs wife",
+        favourtieHobby: "Swearing at Larry and Jeff"
+      },
+    ]
+  }
+}
 // // Use crazyObject to log the following.
 
 // // "omg my mouth is burning"
-// console.log(crazyObject.taco[1].salsa[5]);
+console.log(crazyObject.taco[1].salsa[5]);
 // // "Pretty pretty prettayyyyy good"
-// console.log(crazyObject.larry.quotes[0]);
+console.log(crazyObject.larry.quotes[0]);
 // // "Swearing at Larry and Jeff"
-// console.log(crazyObject.larry.characters[2].favourtieHobby);
+console.log(crazyObject.larry.characters[2].favourtieHobby);
 // // "Chicken Teriyaki Boyyyyyy"
-// console.log(crazyObject.larry.nicknames[1]);
+console.log(crazyObject.larry.nicknames[1]);
 // // The object the contains the name funkhauser
-// console.log(crazyObject.larry.characters[1].name);
+console.log(crazyObject.larry.characters[1].name);
 
 
 
+// I dont even know what I was doing here, but I struggled and did not get it
 
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
 
-// const inception = {
-//    reality: {
-//        dreamLayer1: {
-//            dreamLayer2: {
-//                dreamLayer3: {
-//                    dreamLayer4: {
-//                        dreamLayer5: {
-//                            dreamLayer6: {
-//                                limbo: "Joseph Gordon Levitt"
-//                           }
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
-// }
-
-// let limbo = null
-// console.log(inception);
+let limbo = null
+console.log(inception);
 // // Change the value of limbo to null.
 
 
@@ -165,41 +163,31 @@ const bondFilms = [
 // Create a new array called bondTitles with only the titles of the Bond films, and console.log 
 // the new array.
 
-const bondTitles = {};
+// had trouble getting the films in the array
+const bondTitles = [];
 for(let i = 0; i < bondFilms.length; i++){
 
-console.log(bondFilms[i].title);	
+// console.log(bondFilms[i].title);	
 }
-// bondTitles[bondFilms[i].title] = 0
-// let bondTitles = Array[bondFilms]; 
-
-// for(let key in bondFilms)
-// 	console.log(key);
-// };
-// const bondTitles = {};
-// for(let prop in bondTitles){
-// 	console.log(prop, 'key');
-// 	console.log(bondTitles[prop], 'value');
-// }
-// console.log(bondTitles);
-// console.log(bondTitles[Object.keys(bondTitles)]);
-
-// const bondTitles= console.log([bondFilms[i].title]);
-// bondFilms[bondTitles[i]] = 0
+console.log(bondTitles);
 
 
 // Create a new array oddBonds, of only the Bond films released on odd-numbered years.
-// const oddBonds = []
-// for(let i = 0; i < bondFilms.length; i++){
-// 	// if(bondFilms[i].year % ){
-// 		if ((bondFilms[i].year % 2) == 1){
-// 		oddBonds.push(bondFilms[i]);
-// }
-// }
+const oddBonds = [];
+for(let i = 0; i < bondFilms.length; i++){
+	// if(bondFilms[i].year % ){
+		if ((bondFilms[i].year % 2) == 1){
+		oddBonds.push(bondFilms[i]);
+}
+}
 
-// console.log(oddBonds);
+console.log(oddBonds);
 
+// also had trouble getting these to add upVVV
 
+// Determine the total cumulative gross of the Bond franchise, and console.log the result.
+// Hint: To make the grosses into usable numbers, look into the .replace Javascript method 
+// (there are many ways to do this, however). Look into parseInt() also.
 
 for(let i =0; i < bondFilms.length; i++){
 	// .replace() += (bondFilms[i].gross);
@@ -210,11 +198,9 @@ for(let i =0; i < bondFilms.length; i++){
 	bondFilms[i].gross.replace(/,/g, "")
 
 		console.log(bondFilms[i].gross);
-			// let bondGross=console.log (bondFilms[i].gross)
+			// let bondGross=console.log(bondFilms[i].gross)
 			
 	}
 // }
-// Determine the total cumulative gross of the Bond franchise, and console.log the result.
-// Hint: To make the grosses into usable numbers, look into the .replace Javascript method 
-// (there are many ways to do this, however). Look into parseInt() also.
+
 
